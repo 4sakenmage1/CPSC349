@@ -121,3 +121,27 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+@media all and (min-width: 768px) {
+  /*Styls go here*/
+  .main-content{
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .thumbnail-item{
+    max-width: 260px;
+
+  }
+  .thumbnail-item + .thumbnail-item{
+    margin-top:  20px;
+
+  }
+
+  .thumbnail-list{
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
+
+  }
+}
