@@ -91,8 +91,9 @@ function checkNextHandler(cycle){
     event.preventDefault();
     console.log(i);
     if (i <= thumbnails.length -1){
-      setDetailsFromThumb(thumbnails[i++])
+      setDetailsFromThumb(thumbnails[i+1])
       showDetails();
+      i++
     }
   });
 
@@ -103,8 +104,9 @@ function checkPrevHandler(cycle){
     event.preventDefault();
       console.log(i);
     if (i >= 1){
-      setDetailsFromThumb(thumbnails[i--])
+      setDetailsFromThumb(thumbnails[i-1])
       showDetails();
+      i--;
     }
   });
 
